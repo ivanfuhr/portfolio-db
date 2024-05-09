@@ -1,3 +1,4 @@
+import { Header } from "@/components/Header";
 import { classnameMerge } from "@/lib/classname-merge";
 import { robotoFlex, ttSupermolot } from "@/lib/font-config";
 import type { Metadata } from "next";
@@ -19,7 +20,12 @@ export default function RootLayout({
         "min-h-screen bg-background font-sans antialiased",
         robotoFlex.variable,
         ttSupermolot.variable,
-      )}>{children}</body>
+      )}>
+        <Header />
+        <main>
+          {children}
+        </main>
+      </body>
     </html>
   );
 }
