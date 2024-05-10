@@ -9,7 +9,7 @@ export function NavMobile() {
   return (
     <Dialog.Root>
       <Dialog.Trigger asChild>
-        <button className="md:hidden" aria-label="Abrir menu de navegação">
+        <button className="lg:hidden" aria-label="Abrir menu de navegação">
           <Menu className="h-6 w-6 text-darkBlue-default" />
         </button>
       </Dialog.Trigger>

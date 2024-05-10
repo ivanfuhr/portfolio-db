@@ -5,7 +5,7 @@ export function NavLinks() {
     <>
       <Link href="/">Sobre</Link>
       <Link href="/">Currículo</Link>
-      <Link href="/">Projetos</Link>
+      <Link href="/projetos">Projetos</Link>
     </>
   );
 }

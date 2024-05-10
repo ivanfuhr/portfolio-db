@@ -66,6 +66,9 @@ const config: Config = {
         "2xl": "1.75rem",
         "3xl": "2rem",
         "4xl": "2.25rem"
+      },
+      maxWidth: {
+        "8xl": "85rem"
       }
     },
   },
