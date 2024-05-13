@@ -32,7 +32,9 @@ export function ProjectCard({
 
         <p className="font-light">{description}</p>
 
-        <Button link={link}>Acessar</Button>
+        <Button target="_blank" link={link}>
+          Acessar
+        </Button>
       </div>
     </div>
   );
