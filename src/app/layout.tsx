@@ -26,7 +26,7 @@ export default function RootLayout({
       >
         <PageLoader />
         <Header />
-        <div className="mx-auto my-6 max-w-6xl flex-1 px-6 lg:my-16 lg:px-20">
+        <div className="mx-auto my-6 w-full max-w-6xl flex-1 px-6 lg:my-16 lg:px-20">
           {children}
         </div>
         <Footer />

@@ -23,17 +23,21 @@ export default async function ProjetosPage() {
         <StrongTitle>Projetos</StrongTitle>
       </Title>
 
-      <div className="grid grid-cols-1 gap-12 md:grid-cols-2 xl:grid-cols-3">
-        {projects.map((project, index) => (
-          <ProjectCard
-            key={index}
-            title={project.name}
-            image={project.picture}
-            link={project.url}
-            description={project.description}
-          />
-        ))}
-      </div>
+      {projects.length ? (
+        <div className="grid grid-cols-1 gap-12 md:grid-cols-2 xl:grid-cols-3">
+          {projects.map((project, index) => (
+            <ProjectCard
+              key={index}
+              title={project.name}
+              image={project.picture}
+              link={project.url}
+              description={project.description}
+            />
+          ))}
+        </div>
+      ) : (
+        <p className="font-light">Nenhum projeto encontrado até o momento.</p>
+      )}
     </main>
   );
 }
