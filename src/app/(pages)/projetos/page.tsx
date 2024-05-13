@@ -29,6 +29,7 @@ export default async function ProjetosPage() {
             <ProjectCard
               key={index}
               title={project.name}
+              techs={project.techs}
               image={project.picture}
               link={project.url}
               description={project.description}

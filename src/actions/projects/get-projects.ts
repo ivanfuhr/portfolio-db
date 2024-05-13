@@ -19,7 +19,6 @@ const fetchProjects = async (): Promise<ProjectsResponse> => {
   }
 
   const repositoriesData = await fetchRepositories(process.env.GITHUB_USERNAME);
-  console.log(repositoriesData);
 
   if ("message" in repositoriesData || repositoriesData.length === 0) {
     return {

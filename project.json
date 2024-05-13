@@ -1,6 +1,6 @@
 {
     "name": "Portfolio - DB",
     "description": "Um portofólio simples com informações sobre mim e meus projetos.",
-    "techs": ["HTML", "CSS", "Next.JS", "Github Api"],
+    "techs": ["HTML", "TailwindCSS", "Next.JS", "Github Api"],
     "picture": "https://raw.githubusercontent.com/ivanfuhr/portfolio-db/main/picture.jpg"
 }
