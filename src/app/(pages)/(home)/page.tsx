@@ -2,7 +2,13 @@ import { Assessment, AssessmentProps } from "@/components/Assessment";
 import { StrongTitle } from "@/components/StrongTitle";
 import { Title } from "@/components/Title";
 import { Dot } from "lucide-react";
+import { Metadata } from "next";
 import Image from "next/image";
+
+export const metadata: Metadata = {
+  title: "Projetos - Ivan Führ",
+  description: "Conheça os meus principais projetos.",
+};
 
 const skills: AssessmentProps[] = [
   {

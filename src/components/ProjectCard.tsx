@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Link from "next/link";
+import { Button } from "./Button";
 import { Title } from "./Title";
 
 export type ProjectCardProps = {
@@ -32,12 +32,7 @@ export function ProjectCard({
 
         <p className="font-light">{description}</p>
 
-        <Link
-          href={link}
-          className="w-full rounded-md bg-darkBlue-default py-3 text-center font-supermolot font-bold text-white hover:font-normal"
-        >
-          Acessar
-        </Link>
+        <Button link={link}>Acessar</Button>
       </div>
     </div>
   );
