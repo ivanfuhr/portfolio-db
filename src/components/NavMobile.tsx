@@ -3,10 +3,13 @@ import * as Dialog from "@radix-ui/react-dialog";
 import { motion } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import Image from "next/image";
-import { NavLinks } from "./NavLinks";
-import { SocialLinks } from "./SocialsLinks";
 
-export function NavMobile() {
+type NavMobileProps = {
+  socialLinks: React.ReactNode;
+  navigationLinks: React.ReactNode;
+};
+
+export function NavMobile({ socialLinks, navigationLinks }: NavMobileProps) {
   const slideIn = {
     hidden: { x: "100%" },
     visible: {
@@ -63,13 +66,11 @@ export function NavMobile() {
               </div>
 
               <nav className="flex flex-col gap-4 font-supermolot font-bold text-darkBlue-default">
-                <NavLinks />
+                {navigationLinks}
               </nav>
             </div>
 
-            <div className="flex gap-4">
-              <SocialLinks />
-            </div>
+            <div className="flex gap-4">{socialLinks}</div>
           </motion.div>
         </Dialog.Content>
       </Dialog.Portal>

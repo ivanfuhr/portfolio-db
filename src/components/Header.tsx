@@ -20,7 +20,10 @@ export function Header() {
 
         <div className="flex items-center gap-4 lg:gap-8">
           <SocialLinks />
-          <NavMobile />
+          <NavMobile
+            navigationLinks={<NavLinks />}
+            socialLinks={<SocialLinks />}
+          />
         </div>
       </div>
     </header>
